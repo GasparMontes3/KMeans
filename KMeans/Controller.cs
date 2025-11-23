@@ -1,3 +1,5 @@
+using KMeans.Exceptions;
+
 namespace KMeans;
 
 public class Controller
@@ -6,33 +8,37 @@ public class Controller
     
     public void LoadDataset(string path)
     {
-        string[] lines = File.ReadAllLines(path);
-        List<double[]> data = new List<double[]>();
-        foreach (var l in lines)
-        {
-            string[] line = l.Split(',');
-            double[] instance = new double[line.Length];
-            for (int j = 0; j < line.Length; j++)
-                instance[j] = Convert.ToDouble(line[j]);
-            data.Add(instance);
-        }
+        List<double[]> data = DatasetLoader.LoadDataset(path);
         _result = Result.BuildFromData(data);
     }
 
     public Result Cluster(int numOfClusters, InitializationMethod initializationMethod,
         AggregationMethod aggregationMethod)
     {
+        try
+        {
+            TryCluster(numOfClusters, initializationMethod, aggregationMethod);
+        }
+        catch (ClusterException exception)
+        {
+            _result.ErrorMessage = exception.GetErrorMessage();
+        }
+        return _result;
+    }
+
+    private void TryCluster(int numOfClusters, InitializationMethod initializationMethod,
+        AggregationMethod aggregationMethod)
+    {
         // assign initial clusters
         if (_result == null)
         {
-            _result = Result.BuildFromError("Dataset not loaded");
-            return _result;
+            _result = Result.Build();
+            throw new MissingDatasetException();
         }
         int numOfInstances = _result.Data.Count;
         if (_result.Data.Count == 0)
         {
-            _result.ErrorMessage = "Empty dataset";
-            return _result;
+            throw new EmptyDatasetException();
         }
         int numOfFeatures = _result.Data[0].Length;
         _result.Centroids = new double[numOfClusters][];
@@ -40,8 +46,7 @@ public class Controller
 
         if (numOfInstances < numOfClusters)
         {
-            _result.ErrorMessage = "Number of instances is less than the number of clusters";
-            return _result;
+            throw new NotEnoughInstancesException();
         }
 
         // initializing the centroids
@@ -100,8 +105,7 @@ public class Controller
                 numOfClusters, numOfFeatures, numOfInstances);
             if (newCentroids == null)
             {
-                _result.ErrorMessage = "Empty cluster";
-                return _result;
+                throw new EmptyClusterException();
             }
 
             // Updating centroids and checking convergence
@@ -113,7 +117,6 @@ public class Controller
             _result.Centroids = newCentroids;
             
         }
-        return _result;
     }
 
     public double[][]? ComputeCentroidFromCurrentCluster(AggregationMethod aggregationMethod,

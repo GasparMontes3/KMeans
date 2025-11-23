@@ -18,14 +18,13 @@ public class Result
         Data = data;
     }
     
-    public static Result BuildFromError(string errorMessage)
+    public static Result Build()
     {
-        return new Result(errorMessage);
+        return new Result();
     }
 
-    private Result(string errorMessage)
+    private Result()
     {
-        ErrorMessage = errorMessage;
     }
     
     public bool HasError()
