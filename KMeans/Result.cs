@@ -31,4 +31,14 @@ public class Result
     {
         return ErrorMessage != null;
     }
+
+    public int GetNumberOfInstances()
+    {
+        return Data.Count;
+    }
+
+    public int GetNumberOfFeatures()
+    {
+        return Data[0].Length;
+    }
 }

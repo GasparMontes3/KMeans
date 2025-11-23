@@ -2,25 +2,18 @@ using KMeans.Exceptions;
 
 namespace KMeans;
 
-public class ClusterInitiator
+public static class ClusterInitiator
 {
-    public Result InitiateClusters(Result result, int numOfClusters)
+    public static Result InitiateClusters(Result result, int numOfClusters)
     {
-        if (result == null)
-        {
-            result = Result.Build();
-            throw new MissingDatasetException();
-        }
-        int numOfInstances = result.Data.Count;
         if (result.Data.Count == 0)
         {
             throw new EmptyDatasetException();
         }
-        int numOfFeatures = result.Data[0].Length;
         result.Centroids = new double[numOfClusters][];
-        result.Clusters = new int[numOfInstances];
+        result.Clusters = new int[result.GetNumberOfInstances()];
 
-        if (numOfInstances < numOfClusters)
+        if (result.GetNumberOfInstances() < numOfClusters)
         {
             throw new NotEnoughInstancesException();
         }

@@ -30,26 +30,17 @@ public class Controller
         AggregationMethod aggregationMethod)
     {
         // assign initial clusters
+        
         if (_result == null)
         {
             _result = Result.Build();
             throw new MissingDatasetException();
         }
-        int numOfInstances = _result.Data.Count;
-        if (_result.Data.Count == 0)
-        {
-            throw new EmptyDatasetException();
-        }
-        int numOfFeatures = _result.Data[0].Length;
-        _result.Centroids = new double[numOfClusters][];
-        _result.Clusters = new int[numOfInstances];
-
-        if (numOfInstances < numOfClusters)
-        {
-            throw new NotEnoughInstancesException();
-        }
+        
+        _result = ClusterInitiator.InitiateClusters(_result, numOfClusters);
 
         // initializing the centroids
+        int numOfFeatures = _result.Data[0].Length;
         if (initializationMethod == InitializationMethod.Forgy)
         {
             for (int idCentroid = 0; idCentroid < numOfClusters; idCentroid++)
@@ -58,12 +49,12 @@ public class Controller
         else if (initializationMethod == InitializationMethod.RandomPartition)
         {
             // first, we assign clusters arbitrarily to each observation 
-            for (int instanceId = 0; instanceId < numOfInstances; instanceId++)
+            for (int instanceId = 0; instanceId < _result.GetNumberOfInstances(); instanceId++)
                 _result.Clusters[instanceId] = instanceId % numOfClusters;
             
             // Then, we compute the centroids given the arbitrarily assigned cluster
             double[][]? newCentroid = ComputeCentroidFromCurrentCluster(aggregationMethod, numOfClusters,
-                numOfFeatures, numOfInstances);
+                numOfFeatures, _result.GetNumberOfInstances());
 
             _result.Centroids = newCentroid;
         }
@@ -76,7 +67,7 @@ public class Controller
         {
             _result.Iteration++;
             // Relabelling the instances
-            for (int instanceId = 0; instanceId < numOfInstances; instanceId++)
+            for (int instanceId = 0; instanceId < _result.GetNumberOfInstances(); instanceId++)
             {
                 double[] instance = _result.Data[instanceId];
                 int newClusterId = -1;
@@ -102,7 +93,7 @@ public class Controller
             
             // Recompute centroids as the average positions of the instances that are part of the cluster
             double[][]? newCentroids = ComputeCentroidFromCurrentCluster(aggregationMethod,
-                numOfClusters, numOfFeatures, numOfInstances);
+                numOfClusters, numOfFeatures, _result.GetNumberOfInstances());
             if (newCentroids == null)
             {
                 throw new EmptyClusterException();
