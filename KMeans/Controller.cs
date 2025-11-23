@@ -1,3 +1,5 @@
+using KMeans.Aggregation;
+using KMeans.Centroid;
 using KMeans.Exceptions;
 
 namespace KMeans;
@@ -29,17 +31,13 @@ public class Controller
     private void TryCluster(int numOfClusters, InitializationMethod initializationMethod,
         AggregationMethod aggregationMethod)
     {
-        // assign initial clusters
-        
-        if (_result == null)
-        {
-            _result = Result.Build();
-            throw new MissingDatasetException();
-        }
-        
+        CheckIfMissingDataset();
         _result = ClusterInitiator.InitiateClusters(_result, numOfClusters);
 
         // initializing the centroids
+        //ICentroid centroidInitializer = CentroidFactory.Initialize(initializationMethod);
+        //_result.Centroids = centroidInitializer.GetCentroid();
+        
         int numOfFeatures = _result.Data[0].Length;
         if (initializationMethod == InitializationMethod.Forgy)
         {
@@ -131,27 +129,22 @@ public class Controller
                     return null;
                         
                 // computing the new value for the centroid
-                double newCentroidFeature;
-                if (aggregationMethod == AggregationMethod.Mean)
-                {
-                    newCentroidFeature = featureValues.Sum() / featureValues.Count;
-                }
-                else if (aggregationMethod == AggregationMethod.Median)
-                {
-                    featureValues.Sort();
-                    int midPos = featureValues.Count / 2;
-                    if (featureValues.Count % 2 == 1)
-                        newCentroidFeature = featureValues[midPos];
-                    else
-                        newCentroidFeature = (featureValues[midPos - 1] + featureValues[midPos]) / 2.0;
-                }
-                else
-                    throw new NotImplementedException();
+                IAggregation aggregation = AggregationFactory.Create(aggregationMethod);
+                double newCentroidFeature = aggregation.Aggregate(featureValues);
                     
                 centroids[clusterId][featureId] = newCentroidFeature;
             }
         }
 
         return centroids;
+    }
+
+    private void CheckIfMissingDataset()
+    {
+        if (_result == null)
+        {
+            _result = Result.Build();
+            throw new MissingDatasetException();
+        }
     }
 }
