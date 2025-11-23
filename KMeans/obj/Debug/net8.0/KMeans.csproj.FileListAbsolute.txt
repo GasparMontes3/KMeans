@@ -1,0 +1,85 @@
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/IIC2113_clean_code_2024-2/KMeans/KMeans/bin/Debug/net8.0/KMeans
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/IIC2113_clean_code_2024-2/KMeans/KMeans/bin/Debug/net8.0/KMeans.deps.json
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/IIC2113_clean_code_2024-2/KMeans/KMeans/bin/Debug/net8.0/KMeans.runtimeconfig.json
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/IIC2113_clean_code_2024-2/KMeans/KMeans/bin/Debug/net8.0/KMeans.dll
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/IIC2113_clean_code_2024-2/KMeans/KMeans/bin/Debug/net8.0/KMeans.pdb
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/IIC2113_clean_code_2024-2/KMeans/KMeans/obj/Debug/net8.0/KMeans.GeneratedMSBuildEditorConfig.editorconfig
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/IIC2113_clean_code_2024-2/KMeans/KMeans/obj/Debug/net8.0/KMeans.AssemblyInfoInputs.cache
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/IIC2113_clean_code_2024-2/KMeans/KMeans/obj/Debug/net8.0/KMeans.AssemblyInfo.cs
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/IIC2113_clean_code_2024-2/KMeans/KMeans/obj/Debug/net8.0/KMeans.csproj.CoreCompileInputs.cache
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/IIC2113_clean_code_2024-2/KMeans/KMeans/obj/Debug/net8.0/KMeans.dll
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/IIC2113_clean_code_2024-2/KMeans/KMeans/obj/Debug/net8.0/refint/KMeans.dll
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/IIC2113_clean_code_2024-2/KMeans/KMeans/obj/Debug/net8.0/KMeans.pdb
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/IIC2113_clean_code_2024-2/KMeans/KMeans/obj/Debug/net8.0/KMeans.genruntimeconfig.cache
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/IIC2113_clean_code_2024-2/KMeans/KMeans/obj/Debug/net8.0/ref/KMeans.dll
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/IIC2113_clean_code_2024-2/KMeans/KMeans/obj/Debug/net8.0/KMeans.sourcelink.json
+C:/Users/Cristian/Desktop/U/2024-2/IIC2113/examen/KMeans/KMeans/bin/Debug/net8.0/KMeans.exe
+C:/Users/Cristian/Desktop/U/2024-2/IIC2113/examen/KMeans/KMeans/bin/Debug/net8.0/KMeans.deps.json
+C:/Users/Cristian/Desktop/U/2024-2/IIC2113/examen/KMeans/KMeans/bin/Debug/net8.0/KMeans.runtimeconfig.json
+C:/Users/Cristian/Desktop/U/2024-2/IIC2113/examen/KMeans/KMeans/bin/Debug/net8.0/KMeans.dll
+C:/Users/Cristian/Desktop/U/2024-2/IIC2113/examen/KMeans/KMeans/bin/Debug/net8.0/KMeans.pdb
+C:/Users/Cristian/Desktop/U/2024-2/IIC2113/examen/KMeans/KMeans/obj/Debug/net8.0/KMeans.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Cristian/Desktop/U/2024-2/IIC2113/examen/KMeans/KMeans/obj/Debug/net8.0/KMeans.AssemblyInfoInputs.cache
+C:/Users/Cristian/Desktop/U/2024-2/IIC2113/examen/KMeans/KMeans/obj/Debug/net8.0/KMeans.AssemblyInfo.cs
+C:/Users/Cristian/Desktop/U/2024-2/IIC2113/examen/KMeans/KMeans/obj/Debug/net8.0/KMeans.csproj.CoreCompileInputs.cache
+C:/Users/Cristian/Desktop/U/2024-2/IIC2113/examen/KMeans/KMeans/obj/Debug/net8.0/KMeans.dll
+C:/Users/Cristian/Desktop/U/2024-2/IIC2113/examen/KMeans/KMeans/obj/Debug/net8.0/refint/KMeans.dll
+C:/Users/Cristian/Desktop/U/2024-2/IIC2113/examen/KMeans/KMeans/obj/Debug/net8.0/KMeans.pdb
+C:/Users/Cristian/Desktop/U/2024-2/IIC2113/examen/KMeans/KMeans/obj/Debug/net8.0/KMeans.genruntimeconfig.cache
+C:/Users/Cristian/Desktop/U/2024-2/IIC2113/examen/KMeans/KMeans/obj/Debug/net8.0/ref/KMeans.dll
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans/KMeans/bin/Debug/net8.0/KMeans
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans/KMeans/bin/Debug/net8.0/KMeans.deps.json
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans/KMeans/bin/Debug/net8.0/KMeans.runtimeconfig.json
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans/KMeans/bin/Debug/net8.0/KMeans.dll
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans/KMeans/bin/Debug/net8.0/KMeans.pdb
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans/KMeans/obj/Debug/net8.0/KMeans.GeneratedMSBuildEditorConfig.editorconfig
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans/KMeans/obj/Debug/net8.0/KMeans.AssemblyInfoInputs.cache
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans/KMeans/obj/Debug/net8.0/KMeans.AssemblyInfo.cs
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans/KMeans/obj/Debug/net8.0/KMeans.csproj.CoreCompileInputs.cache
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans/KMeans/obj/Debug/net8.0/KMeans.dll
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans/KMeans/obj/Debug/net8.0/refint/KMeans.dll
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans/KMeans/obj/Debug/net8.0/KMeans.pdb
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans/KMeans/obj/Debug/net8.0/KMeans.genruntimeconfig.cache
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans/KMeans/obj/Debug/net8.0/ref/KMeans.dll
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans_3/KMeans/bin/Debug/net8.0/KMeans
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans_3/KMeans/bin/Debug/net8.0/KMeans.deps.json
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans_3/KMeans/bin/Debug/net8.0/KMeans.runtimeconfig.json
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans_3/KMeans/bin/Debug/net8.0/KMeans.dll
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans_3/KMeans/bin/Debug/net8.0/KMeans.pdb
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans_3/KMeans/obj/Debug/net8.0/KMeans.GeneratedMSBuildEditorConfig.editorconfig
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans_3/KMeans/obj/Debug/net8.0/KMeans.AssemblyInfoInputs.cache
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans_3/KMeans/obj/Debug/net8.0/KMeans.AssemblyInfo.cs
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans_3/KMeans/obj/Debug/net8.0/KMeans.csproj.CoreCompileInputs.cache
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans_3/KMeans/obj/Debug/net8.0/KMeans.dll
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans_3/KMeans/obj/Debug/net8.0/refint/KMeans.dll
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans_3/KMeans/obj/Debug/net8.0/KMeans.pdb
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans_3/KMeans/obj/Debug/net8.0/KMeans.genruntimeconfig.cache
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/KMeans_3/KMeans/obj/Debug/net8.0/ref/KMeans.dll
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/docs/KMeans/KMeans/bin/Debug/net8.0/KMeans
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/docs/KMeans/KMeans/bin/Debug/net8.0/KMeans.deps.json
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/docs/KMeans/KMeans/bin/Debug/net8.0/KMeans.runtimeconfig.json
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/docs/KMeans/KMeans/bin/Debug/net8.0/KMeans.dll
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/docs/KMeans/KMeans/bin/Debug/net8.0/KMeans.pdb
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/docs/KMeans/KMeans/obj/Debug/net8.0/KMeans.GeneratedMSBuildEditorConfig.editorconfig
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/docs/KMeans/KMeans/obj/Debug/net8.0/KMeans.AssemblyInfoInputs.cache
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/docs/KMeans/KMeans/obj/Debug/net8.0/KMeans.AssemblyInfo.cs
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/docs/KMeans/KMeans/obj/Debug/net8.0/KMeans.csproj.CoreCompileInputs.cache
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/docs/KMeans/KMeans/obj/Debug/net8.0/KMeans.dll
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/docs/KMeans/KMeans/obj/Debug/net8.0/refint/KMeans.dll
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/docs/KMeans/KMeans/obj/Debug/net8.0/KMeans.pdb
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/docs/KMeans/KMeans/obj/Debug/net8.0/KMeans.genruntimeconfig.cache
+/home/rodrigo/Desktop/IIC2113/2024-2/Interrogación/docs/KMeans/KMeans/obj/Debug/net8.0/ref/KMeans.dll
+C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans\bin\Debug\net8.0\KMeans.exe
+C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans\bin\Debug\net8.0\KMeans.deps.json
+C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans\bin\Debug\net8.0\KMeans.runtimeconfig.json
+C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans\bin\Debug\net8.0\KMeans.dll
+C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans\bin\Debug\net8.0\KMeans.pdb
+C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans\obj\Debug\net8.0\KMeans.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans\obj\Debug\net8.0\KMeans.AssemblyInfoInputs.cache
+C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans\obj\Debug\net8.0\KMeans.AssemblyInfo.cs
+C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans\obj\Debug\net8.0\KMeans.csproj.CoreCompileInputs.cache
+C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans\obj\Debug\net8.0\KMeans.dll
+C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans\obj\Debug\net8.0\refint\KMeans.dll
+C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans\obj\Debug\net8.0\KMeans.pdb
+C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans\obj\Debug\net8.0\KMeans.genruntimeconfig.cache
+C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans\obj\Debug\net8.0\ref\KMeans.dll
