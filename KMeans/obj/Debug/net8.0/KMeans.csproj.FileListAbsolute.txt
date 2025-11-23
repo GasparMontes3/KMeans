@@ -78,6 +78,7 @@ C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans\obj\Debug\net8.0\KM
 C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans\obj\Debug\net8.0\KMeans.AssemblyInfoInputs.cache
 C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans\obj\Debug\net8.0\KMeans.AssemblyInfo.cs
 C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans\obj\Debug\net8.0\KMeans.csproj.CoreCompileInputs.cache
+C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans\obj\Debug\net8.0\KMeans.sourcelink.json
 C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans\obj\Debug\net8.0\KMeans.dll
 C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans\obj\Debug\net8.0\refint\KMeans.dll
 C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans\obj\Debug\net8.0\KMeans.pdb

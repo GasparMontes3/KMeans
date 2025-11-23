@@ -514,6 +514,7 @@ C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans.Tests\obj\Debug\net
 C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans.Tests\obj\Debug\net8.0\KMeans.Tests.AssemblyInfoInputs.cache
 C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans.Tests\obj\Debug\net8.0\KMeans.Tests.AssemblyInfo.cs
 C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans.Tests\obj\Debug\net8.0\KMeans.Tests.csproj.CoreCompileInputs.cache
+C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans.Tests\obj\Debug\net8.0\KMeans.Tests.sourcelink.json
 C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans.Tests\obj\Debug\net8.0\KMeans.T.EEF8AD82.Up2Date
 C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans.Tests\obj\Debug\net8.0\KMeans.Tests.dll
 C:\Users\gaspa\Desktop\Uni\DDdS\Prubas Pasadas\KMeans\KMeans.Tests\obj\Debug\net8.0\refint\KMeans.Tests.dll

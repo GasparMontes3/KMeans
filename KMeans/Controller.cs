@@ -4,7 +4,6 @@ public class Controller
 {
     public Result _result;
     
-    //Primera Resp: Load Data
     public void LoadDataset(string path)
     {
         string[] lines = File.ReadAllLines(path);
