@@ -34,22 +34,8 @@ public class Controller
         CheckIfMissingDataset();
         _result = ClusterInitiator.InitiateClusters(_result, numOfClusters);
         
-        if (initializationMethod == InitializationMethod.Forgy)
-        {
-            for (int idCentroid = 0; idCentroid < numOfClusters; idCentroid++)
-                _result.Centroids[idCentroid] = (double[])_result.Data[idCentroid].Clone();
-        }
-        else if (initializationMethod == InitializationMethod.RandomPartition)
-        {
-            // first, we assign clusters arbitrarily to each observation 
-            for (int instanceId = 0; instanceId < _result.GetNumberOfInstances(); instanceId++)
-                _result.Clusters[instanceId] = instanceId % numOfClusters;
-            
-            // Then, we compute the centroids given the arbitrarily assigned cluster
-            _result.Centroids = CentroidComputer.ComputeCentroidFromCurrentCluster(aggregationMethod, numOfClusters, _result);
-        }
-        else
-            throw new NotImplementedException();
+        ICentroid centroidInitializer = CentroidFactory.Initialize(initializationMethod);
+        _result = centroidInitializer.GetCentroid(_result, numOfClusters, aggregationMethod);
 
         // run K-means
         bool converged = false;

@@ -2,5 +2,5 @@ namespace KMeans.Centroid;
 
 public interface ICentroid
 {
-    public double[][] GetCentroid();
+    public Result GetCentroid(Result result, int numOfClusters, AggregationMethod aggregationMethod);
 }
