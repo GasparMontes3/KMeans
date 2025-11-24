@@ -33,12 +33,7 @@ public class Controller
     {
         CheckIfMissingDataset();
         _result = ClusterInitiator.InitiateClusters(_result, numOfClusters);
-
-        // initializing the centroids
-        //ICentroid centroidInitializer = CentroidFactory.Initialize(initializationMethod);
-        //_result.Centroids = centroidInitializer.GetCentroid();
         
-        int numOfFeatures = _result.Data[0].Length;
         if (initializationMethod == InitializationMethod.Forgy)
         {
             for (int idCentroid = 0; idCentroid < numOfClusters; idCentroid++)
@@ -51,10 +46,7 @@ public class Controller
                 _result.Clusters[instanceId] = instanceId % numOfClusters;
             
             // Then, we compute the centroids given the arbitrarily assigned cluster
-            double[][]? newCentroid = ComputeCentroidFromCurrentCluster(aggregationMethod, numOfClusters,
-                numOfFeatures, _result.GetNumberOfInstances());
-
-            _result.Centroids = newCentroid;
+            _result.Centroids = CentroidComputer.ComputeCentroidFromCurrentCluster(aggregationMethod, numOfClusters, _result);
         }
         else
             throw new NotImplementedException();
@@ -74,7 +66,7 @@ public class Controller
                 {
                     // L2-norm
                     double distanceToCentroid = 0.0;
-                    for (int featureId = 0; featureId < numOfFeatures; featureId++)
+                    for (int featureId = 0; featureId < _result.GetNumberOfFeatures(); featureId++)
                         distanceToCentroid += Math.Pow(_result.Centroids[clusterId][featureId] - instance[featureId], 2);
                     
                     // updated current cluster
@@ -90,8 +82,8 @@ public class Controller
 
             
             // Recompute centroids as the average positions of the instances that are part of the cluster
-            double[][]? newCentroids = ComputeCentroidFromCurrentCluster(aggregationMethod,
-                numOfClusters, numOfFeatures, _result.GetNumberOfInstances());
+            double[][] newCentroids = CentroidComputer.ComputeCentroidFromCurrentCluster(aggregationMethod, numOfClusters, _result);
+            
             if (newCentroids == null)
             {
                 throw new EmptyClusterException();
@@ -100,45 +92,12 @@ public class Controller
             // Updating centroids and checking convergence
             converged = true;
             for (int clusterId = 0; clusterId < numOfClusters; clusterId++)
-                for (int featureId = 0; featureId < numOfFeatures; featureId++)
+                for (int featureId = 0; featureId < _result.GetNumberOfFeatures(); featureId++)
                     if (Math.Abs(newCentroids[clusterId][featureId] - _result.Centroids[clusterId][featureId]) > 0.000001)
                         converged = false;
             _result.Centroids = newCentroids;
-            
         }
     }
-
-    public double[][]? ComputeCentroidFromCurrentCluster(AggregationMethod aggregationMethod,
-        int numOfClusters, int numOfFeatures, int numOfInstances)
-    {
-        double[][] centroids = new double[numOfClusters][];
-
-        for (int clusterId = 0; clusterId < numOfClusters; clusterId++)
-        {
-            centroids[clusterId] = new double[numOfFeatures];
-            for (int featureId = 0; featureId < numOfFeatures; featureId++)
-            {
-                // collecting the value of all the features
-                List<double> featureValues = new List<double>();
-                for (int instanceId = 0; instanceId < numOfInstances; instanceId++)
-                    if (_result.Clusters[instanceId] == clusterId)
-                        featureValues.Add(_result.Data[instanceId][featureId]);
-                
-                // if a cluster is empty it means that k-means failed, and we should let the user know
-                if (!featureValues.Any())
-                    return null;
-                        
-                // computing the new value for the centroid
-                IAggregation aggregation = AggregationFactory.Create(aggregationMethod);
-                double newCentroidFeature = aggregation.Aggregate(featureValues);
-                    
-                centroids[clusterId][featureId] = newCentroidFeature;
-            }
-        }
-
-        return centroids;
-    }
-
     private void CheckIfMissingDataset()
     {
         if (_result == null)
